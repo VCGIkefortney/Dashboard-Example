@@ -1,0 +1,85 @@
+GEOID10,countyshort,total population,total number of housing units,variable,value,percentage
+50009,Essex,6306,5019,occupied housing units,2818,0.5614664275752141
+50011,Franklin,47746,21588,occupied housing units,18513,0.8575597554196775
+50005,Caledonia,31227,15942,occupied housing units,12553,0.7874168862125204
+50001,Addison,36821,16760,occupied housing units,14084,0.8403341288782816
+50021,Rutland,61642,33768,occupied housing units,25984,0.7694859038142621
+50025,Windham,44513,29735,occupied housing units,19290,0.6487304523289054
+50027,Windsor,56670,34118,occupied housing units,24753,0.7255114602262736
+50023,Washington,59534,29941,occupied housing units,25027,0.8358772252095789
+50013,Grand Isle,6970,5048,occupied housing units,2902,0.5748811410459588
+50015,Lamoille,24475,12969,occupied housing units,10014,0.7721489706222531
+50017,Orange,28936,14845,occupied housing units,11887,0.8007409902324015
+50003,Bennington,37125,20922,occupied housing units,15470,0.7394130580250454
+50019,Orleans,27231,16162,occupied housing units,11320,0.7004083653013241
+50007,Chittenden,156545,65722,occupied housing units,61827,0.9407352180396215
+50009,Essex,6306,5019,vacant housing units,2201,0.4385335724247858
+50011,Franklin,47746,21588,vacant housing units,3075,0.1424402445803224
+50005,Caledonia,31227,15942,vacant housing units,3389,0.21258311378747963
+50001,Addison,36821,16760,vacant housing units,2676,0.15966587112171837
+50021,Rutland,61642,33768,vacant housing units,7784,0.23051409618573798
+50025,Windham,44513,29735,vacant housing units,10445,0.3512695476710947
+50027,Windsor,56670,34118,vacant housing units,9365,0.2744885397737265
+50023,Washington,59534,29941,vacant housing units,4914,0.16412277479042117
+50013,Grand Isle,6970,5048,vacant housing units,2146,0.4251188589540412
+50015,Lamoille,24475,12969,vacant housing units,2955,0.22785102937774693
+50017,Orange,28936,14845,vacant housing units,2958,0.19925900976759853
+50003,Bennington,37125,20922,vacant housing units,5452,0.2605869419749546
+50019,Orleans,27231,16162,vacant housing units,4842,0.2995916346986759
+50007,Chittenden,156545,65722,vacant housing units,3895,0.059264781960378564
+50009,Essex,6306,5019,occupied housing units owned with mortgage or loan by resident,1242,0.2474596533173939
+50011,Franklin,47746,21588,occupied housing units owned with mortgage or loan by resident,10101,0.4678988326848249
+50005,Caledonia,31227,15942,occupied housing units owned with mortgage or loan by resident,5830,0.36570066491029984
+50001,Addison,36821,16760,occupied housing units owned with mortgage or loan by resident,7279,0.4343078758949881
+50021,Rutland,61642,33768,occupied housing units owned with mortgage or loan by resident,11989,0.3550402748163942
+50025,Windham,44513,29735,occupied housing units owned with mortgage or loan by resident,8258,0.2777198587523121
+50027,Windsor,56670,34118,occupied housing units owned with mortgage or loan by resident,11436,0.3351896359692831
+50023,Washington,59534,29941,occupied housing units owned with mortgage or loan by resident,12054,0.40259176380214423
+50013,Grand Isle,6970,5048,occupied housing units owned with mortgage or loan by resident,1644,0.3256735340729002
+50015,Lamoille,24475,12969,occupied housing units owned with mortgage or loan by resident,4918,0.3792119669982265
+50017,Orange,28936,14845,occupied housing units owned with mortgage or loan by resident,6053,0.4077467160660155
+50003,Bennington,37125,20922,occupied housing units owned with mortgage or loan by resident,7082,0.33849536373195677
+50019,Orleans,27231,16162,occupied housing units owned with mortgage or loan by resident,5280,0.32669224105927486
+50007,Chittenden,156545,65722,occupied housing units owned with mortgage or loan by resident,30427,0.46296521712668515
+50009,Essex,6306,5019,occupied housing units owned free and clear by resident,1018,0.20282924885435347
+50011,Franklin,47746,21588,occupied housing units owned free and clear by resident,3728,0.17268853066518436
+50005,Caledonia,31227,15942,occupied housing units owned free and clear by resident,3403,0.21346129720235854
+50001,Addison,36821,16760,occupied housing units owned free and clear by resident,3383,0.20184964200477326
+50021,Rutland,61642,33768,occupied housing units owned free and clear by resident,6158,0.18236199952617863
+50025,Windham,44513,29735,occupied housing units owned free and clear by resident,4866,0.16364553556414999
+50027,Windsor,56670,34118,occupied housing units owned free and clear by resident,6461,0.18937217890849406
+50023,Washington,59534,29941,occupied housing units owned free and clear by resident,5486,0.1832270131258141
+50013,Grand Isle,6970,5048,occupied housing units owned free and clear by resident,714,0.14144215530903329
+50015,Lamoille,24475,12969,occupied housing units owned free and clear by resident,2210,0.17040635361246048
+50017,Orange,28936,14845,occupied housing units owned free and clear by resident,3296,0.22202761872684407
+50003,Bennington,37125,20922,occupied housing units owned free and clear by resident,3935,0.18807953350540102
+50019,Orleans,27231,16162,occupied housing units owned free and clear by resident,3273,0.2025120653384482
+50007,Chittenden,156545,65722,occupied housing units owned free and clear by resident,9883,0.15037582544657802
+50009,Essex,6306,5019,occupied housing units renter occupied,558,0.11117752540346683
+50011,Franklin,47746,21588,occupied housing units renter occupied,4684,0.21697239206966834
+50005,Caledonia,31227,15942,occupied housing units renter occupied,3320,0.208254924099862
+50001,Addison,36821,16760,occupied housing units renter occupied,3422,0.20417661097852027
+50021,Rutland,61642,33768,occupied housing units renter occupied,7837,0.23208362947168917
+50025,Windham,44513,29735,occupied housing units renter occupied,6166,0.20736505801244326
+50027,Windsor,56670,34118,occupied housing units renter occupied,6856,0.2009496453484964
+50023,Washington,59534,29941,occupied housing units renter occupied,7487,0.2500584482816205
+50013,Grand Isle,6970,5048,occupied housing units renter occupied,544,0.10776545166402536
+50015,Lamoille,24475,12969,occupied housing units renter occupied,2886,0.22253065001156605
+50017,Orange,28936,14845,occupied housing units renter occupied,2538,0.17096665543954193
+50003,Bennington,37125,20922,occupied housing units renter occupied,4453,0.2128381607876876
+50019,Orleans,27231,16162,occupied housing units renter occupied,2767,0.17120405890360105
+50007,Chittenden,156545,65722,occupied housing units renter occupied,21517,0.3273941754663583
+50009,Essex,6306,5019,vacant housing units for seasonal recreational or occasional use,1928,0.3841402669854553
+50011,Franklin,47746,21588,vacant housing units for seasonal recreational or occasional use,2040,0.09449694274596998
+50005,Caledonia,31227,15942,vacant housing units for seasonal recreational or occasional use,2376,0.14904027098231087
+50001,Addison,36821,16760,vacant housing units for seasonal recreational or occasional use,1834,0.1094272076372315
+50021,Rutland,61642,33768,vacant housing units for seasonal recreational or occasional use,5787,0.17137526652452026
+50025,Windham,44513,29735,vacant housing units for seasonal recreational or occasional use,9122,0.30677652597948546
+50027,Windsor,56670,34118,vacant housing units for seasonal recreational or occasional use,7402,0.21695292807315786
+50023,Washington,59534,29941,vacant housing units for seasonal recreational or occasional use,3454,0.11536020840987275
+50013,Grand Isle,6970,5048,vacant housing units for seasonal recreational or occasional use,1839,0.3643026941362916
+50015,Lamoille,24475,12969,vacant housing units for seasonal recreational or occasional use,2245,0.1731050967692189
+50017,Orange,28936,14845,vacant housing units for seasonal recreational or occasional use,2147,0.14462782081508926
+50003,Bennington,37125,20922,vacant housing units for seasonal recreational or occasional use,4294,0.20523850492304752
+50019,Orleans,27231,16162,vacant housing units for seasonal recreational or occasional use,3951,0.24446231901992327
+50007,Chittenden,156545,65722,vacant housing units for seasonal recreational or occasional use,1779,0.027068561516691517

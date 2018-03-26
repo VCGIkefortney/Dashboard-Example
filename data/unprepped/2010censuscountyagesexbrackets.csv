@@ -1,0 +1,645 @@
+county,sex,age,people
+Essex County,1,0-5,132
+Franklin County,1,0-5,1581
+Caledonia County,1,0-5,918
+Addison County,1,0-5,956
+Rutland County,1,0-5,1441
+Windham County,1,0-5,1116
+Windsor County,1,0-5,1354
+Washington County,1,0-5,1526
+Grand Isle County,1,0-5,150
+Lamoille County,1,0-5,694
+Orange County,1,0-5,735
+Bennington County,1,0-5,995
+Orleans County,1,0-5,689
+Chittenden County,1,0-5,4052
+Essex County,1,6 to 10,154
+Franklin County,1,6 to 10,1570
+Caledonia County,1,6 to 10,935
+Addison County,1,6 to 10,1007
+Rutland County,1,6 to 10,1684
+Windham County,1,6 to 10,1223
+Windsor County,1,6 to 10,1546
+Washington County,1,6 to 10,1705
+Grand Isle County,1,6 to 10,182
+Lamoille County,1,6 to 10,758
+Orange County,1,6 to 10,851
+Bennington County,1,6 to 10,1067
+Orleans County,1,6 to 10,792
+Chittenden County,1,6 to 10,4380
+Essex County,1,11 to 15,202
+Franklin County,1,11 to 15,1795
+Caledonia County,1,11 to 15,984
+Addison County,1,11 to 15,1151
+Rutland County,1,11 to 15,1813
+Windham County,1,11 to 15,1377
+Windsor County,1,11 to 15,1740
+Washington County,1,11 to 15,1812
+Grand Isle County,1,11 to 15,240
+Lamoille County,1,11 to 15,816
+Orange County,1,11 to 15,894
+Bennington County,1,11 to 15,1072
+Orleans County,1,11 to 15,869
+Chittenden County,1,11 to 15,4586
+Essex County,1,15-17,121
+Franklin County,1,15-17,1127
+Caledonia County,1,15-17,672
+Addison County,1,15-17,806
+Rutland County,1,15-17,1204
+Windham County,1,15-17,891
+Windsor County,1,15-17,1091
+Washington County,1,15-17,1197
+Grand Isle County,1,15-17,152
+Lamoille County,1,15-17,518
+Orange County,1,15-17,579
+Bennington County,1,15-17,818
+Orleans County,1,15-17,559
+Chittenden County,1,15-17,3069
+Essex County,1,18-19,54
+Franklin County,1,18-19,576
+Caledonia County,1,18-19,601
+Addison County,1,18-19,847
+Rutland County,1,18-19,997
+Windham County,1,18-19,576
+Windsor County,1,18-19,564
+Washington County,1,18-19,1174
+Grand Isle County,1,18-19,68
+Lamoille County,1,18-19,388
+Orange County,1,18-19,482
+Bennington County,1,18-19,525
+Orleans County,1,18-19,310
+Chittenden County,1,18-19,3693
+Essex County,1,20,43
+Franklin County,1,20,252
+Caledonia County,1,20,263
+Addison County,1,20,479
+Rutland County,1,20,477
+Windham County,1,20,312
+Windsor County,1,20,243
+Washington County,1,20,513
+Grand Isle County,1,20,44
+Lamoille County,1,20,187
+Orange County,1,20,240
+Bennington County,1,20,219
+Orleans County,1,20,157
+Chittenden County,1,20,1992
+Essex County,1,21,22
+Franklin County,1,21,251
+Caledonia County,1,21,226
+Addison County,1,21,398
+Rutland County,1,21,425
+Windham County,1,21,268
+Windsor County,1,21,239
+Washington County,1,21,472
+Grand Isle County,1,21,24
+Lamoille County,1,21,165
+Orange County,1,21,188
+Bennington County,1,21,215
+Orleans County,1,21,134
+Chittenden County,1,21,1976
+Essex County,1,22-24,76
+Franklin County,1,22-24,695
+Caledonia County,1,22-24,543
+Addison County,1,22-24,778
+Rutland County,1,22-24,1201
+Windham County,1,22-24,758
+Windsor County,1,22-24,854
+Washington County,1,22-24,1087
+Grand Isle County,1,22-24,96
+Lamoille County,1,22-24,460
+Orange County,1,22-24,442
+Bennington County,1,22-24,562
+Orleans County,1,22-24,472
+Chittenden County,1,22-24,4234
+Essex County,1,25-29,127
+Franklin County,1,25-29,1365
+Caledonia County,1,25-29,831
+Addison County,1,25-29,818
+Rutland County,1,25-29,1610
+Windham County,1,25-29,1176
+Windsor County,1,25-29,1619
+Washington County,1,25-29,1481
+Grand Isle County,1,25-29,137
+Lamoille County,1,25-29,690
+Orange County,1,25-29,751
+Bennington County,1,25-29,861
+Orleans County,1,25-29,765
+Chittenden County,1,25-29,5482
+Essex County,1,30-34,132
+Franklin County,1,30-34,1409
+Caledonia County,1,30-34,821
+Addison County,1,30-34,889
+Rutland County,1,30-34,1522
+Windham County,1,30-34,1077
+Windsor County,1,30-34,1476
+Washington County,1,30-34,1612
+Grand Isle County,1,30-34,186
+Lamoille County,1,30-34,754
+Orange County,1,30-34,731
+Bennington County,1,30-34,799
+Orleans County,1,30-34,751
+Chittenden County,1,30-34,4749
+Essex County,1,35-39,182
+Franklin County,1,35-39,1620
+Caledonia County,1,35-39,886
+Addison County,1,35-39,994
+Rutland County,1,35-39,1634
+Windham County,1,35-39,1135
+Windsor County,1,35-39,1524
+Washington County,1,35-39,1802
+Grand Isle County,1,35-39,191
+Lamoille County,1,35-39,842
+Orange County,1,35-39,789
+Bennington County,1,35-39,932
+Orleans County,1,35-39,835
+Chittenden County,1,35-39,4616
+Essex County,1,40-44,215
+Franklin County,1,40-44,1756
+Caledonia County,1,40-44,948
+Addison County,1,40-44,1197
+Rutland County,1,40-44,2020
+Windham County,1,40-44,1343
+Windsor County,1,40-44,1779
+Washington County,1,40-44,2067
+Grand Isle County,1,40-44,257
+Lamoille County,1,40-44,849
+Orange County,1,40-44,960
+Bennington County,1,40-44,1166
+Orleans County,1,40-44,900
+Chittenden County,1,40-44,5146
+Essex County,1,45-49,262
+Franklin County,1,45-49,2023
+Caledonia County,1,45-49,1143
+Addison County,1,45-49,1517
+Rutland County,1,45-49,2535
+Windham County,1,45-49,1756
+Windsor County,1,45-49,2204
+Washington County,1,45-49,2353
+Grand Isle County,1,45-49,286
+Lamoille County,1,45-49,962
+Orange County,1,45-49,1179
+Bennington County,1,45-49,1415
+Orleans County,1,45-49,1053
+Chittenden County,1,45-49,5826
+Essex County,1,50-54,285
+Franklin County,1,50-54,1968
+Caledonia County,1,50-54,1192
+Addison County,1,50-54,1507
+Rutland County,1,50-54,2592
+Windham County,1,50-54,1971
+Windsor County,1,50-54,2473
+Washington County,1,50-54,2453
+Grand Isle County,1,50-54,346
+Lamoille County,1,50-54,989
+Orange County,1,50-54,1327
+Bennington County,1,50-54,1514
+Orleans County,1,50-54,1076
+Chittenden County,1,50-54,6080
+Essex County,1,55-59,317
+Franklin County,1,55-59,1684
+Caledonia County,1,55-59,1300
+Addison County,1,55-59,1444
+Rutland County,1,55-59,2539
+Windham County,1,55-59,1967
+Windsor County,1,55-59,2436
+Washington County,1,55-59,2332
+Grand Isle County,1,55-59,340
+Lamoille County,1,55-59,857
+Orange County,1,55-59,1199
+Bennington County,1,55-59,1387
+Orleans County,1,55-59,1059
+Chittenden County,1,55-59,5044
+Essex County,1,60-61,105
+Franklin County,1,60-61,579
+Caledonia County,1,60-61,429
+Addison County,1,60-61,544
+Rutland County,1,60-61,968
+Windham County,1,60-61,739
+Windsor County,1,60-61,877
+Washington County,1,60-61,961
+Grand Isle County,1,60-61,133
+Lamoille County,1,60-61,345
+Orange County,1,60-61,489
+Bennington County,1,60-61,575
+Orleans County,1,60-61,372
+Chittenden County,1,60-61,1731
+Essex County,1,62-64,162
+Franklin County,1,62-64,828
+Caledonia County,1,62-64,656
+Addison County,1,62-64,696
+Rutland County,1,62-64,1273
+Windham County,1,62-64,926
+Windsor County,1,62-64,1199
+Washington County,1,62-64,1141
+Grand Isle County,1,62-64,167
+Lamoille County,1,62-64,449
+Orange County,1,62-64,608
+Bennington County,1,62-64,759
+Orleans County,1,62-64,617
+Chittenden County,1,62-64,2281
+Essex County,1,65-66,98
+Franklin County,1,65-66,415
+Caledonia County,1,65-66,343
+Addison County,1,65-66,428
+Rutland County,1,65-66,707
+Windham County,1,65-66,517
+Windsor County,1,65-66,683
+Washington County,1,65-66,552
+Grand Isle County,1,65-66,86
+Lamoille County,1,65-66,247
+Orange County,1,65-66,293
+Bennington County,1,65-66,408
+Orleans County,1,65-66,331
+Chittenden County,1,65-66,1197
+Essex County,1,67-69,128
+Franklin County,1,67-69,540
+Caledonia County,1,67-69,430
+Addison County,1,67-69,444
+Rutland County,1,67-69,882
+Windham County,1,67-69,647
+Windsor County,1,67-69,949
+Washington County,1,67-69,730
+Grand Isle County,1,67-69,120
+Lamoille County,1,67-69,307
+Orange County,1,67-69,430
+Bennington County,1,67-69,558
+Orleans County,1,67-69,472
+Chittenden County,1,67-69,1444
+Essex County,1,70-74,148
+Franklin County,1,70-74,626
+Caledonia County,1,70-74,500
+Addison County,1,70-74,539
+Rutland County,1,70-74,1057
+Windham County,1,70-74,772
+Windsor County,1,70-74,1058
+Washington County,1,70-74,933
+Grand Isle County,1,70-74,128
+Lamoille County,1,70-74,372
+Orange County,1,70-74,463
+Bennington County,1,70-74,706
+Orleans County,1,70-74,529
+Chittenden County,1,70-74,1703
+Essex County,1,75-79,112
+Franklin County,1,75-79,453
+Caledonia County,1,75-79,365
+Addison County,1,75-79,395
+Rutland County,1,75-79,796
+Windham County,1,75-79,567
+Windsor County,1,75-79,783
+Washington County,1,75-79,664
+Grand Isle County,1,75-79,76
+Lamoille County,1,75-79,279
+Orange County,1,75-79,382
+Bennington County,1,75-79,576
+Orleans County,1,75-79,344
+Chittenden County,1,75-79,1316
+Essex County,1,80-84,68
+Franklin County,1,80-84,340
+Caledonia County,1,80-84,289
+Addison County,1,80-84,280
+Rutland County,1,80-84,570
+Windham County,1,80-84,423
+Windsor County,1,80-84,595
+Washington County,1,80-84,478
+Grand Isle County,1,80-84,39
+Lamoille County,1,80-84,192
+Orange County,1,80-84,236
+Bennington County,1,80-84,443
+Orleans County,1,80-84,289
+Chittenden County,1,80-84,941
+Essex County,1,85+,43
+Franklin County,1,85+,235
+Caledonia County,1,85+,234
+Addison County,1,85+,250
+Rutland County,1,85+,438
+Windham County,1,85+,332
+Windsor County,1,85+,488
+Washington County,1,85+,367
+Grand Isle County,1,85+,30
+Lamoille County,1,85+,124
+Orange County,1,85+,173
+Bennington County,1,85+,382
+Orleans County,1,85+,236
+Chittenden County,1,85+,771
+Essex County,2,0-5,122
+Franklin County,2,0-5,1426
+Caledonia County,2,0-5,809
+Addison County,2,0-5,816
+Rutland County,2,0-5,1391
+Windham County,2,0-5,1032
+Windsor County,2,0-5,1318
+Washington County,2,0-5,1561
+Grand Isle County,2,0-5,169
+Lamoille County,2,0-5,801
+Orange County,2,0-5,737
+Bennington County,2,0-5,882
+Orleans County,2,0-5,724
+Chittenden County,2,0-5,3825
+Essex County,2,6 to 10,152
+Franklin County,2,6 to 10,1559
+Caledonia County,2,6 to 10,908
+Addison County,2,6 to 10,916
+Rutland County,2,6 to 10,1524
+Windham County,2,6 to 10,1124
+Windsor County,2,6 to 10,1481
+Washington County,2,6 to 10,1661
+Grand Isle County,2,6 to 10,188
+Lamoille County,2,6 to 10,709
+Orange County,2,6 to 10,772
+Bennington County,2,6 to 10,923
+Orleans County,2,6 to 10,784
+Chittenden County,2,6 to 10,4099
+Essex County,2,11 to 15,178
+Franklin County,2,11 to 15,1700
+Caledonia County,2,11 to 15,910
+Addison County,2,11 to 15,1095
+Rutland County,2,11 to 15,1739
+Windham County,2,11 to 15,1247
+Windsor County,2,11 to 15,1609
+Washington County,2,11 to 15,1730
+Grand Isle County,2,11 to 15,201
+Lamoille County,2,11 to 15,693
+Orange County,2,11 to 15,892
+Bennington County,2,11 to 15,1075
+Orleans County,2,11 to 15,845
+Chittenden County,2,11 to 15,4372
+Essex County,2,15-17,136
+Franklin County,2,15-17,1049
+Caledonia County,2,15-17,657
+Addison County,2,15-17,755
+Rutland County,2,15-17,1086
+Windham County,2,15-17,828
+Windsor County,2,15-17,1110
+Washington County,2,15-17,1128
+Grand Isle County,2,15-17,135
+Lamoille County,2,15-17,478
+Orange County,2,15-17,589
+Bennington County,2,15-17,771
+Orleans County,2,15-17,534
+Chittenden County,2,15-17,2930
+Essex County,2,18-19,67
+Franklin County,2,18-19,473
+Caledonia County,2,18-19,474
+Addison County,2,18-19,878
+Rutland County,2,18-19,959
+Windham County,2,18-19,544
+Windsor County,2,18-19,479
+Washington County,2,18-19,647
+Grand Isle County,2,18-19,65
+Lamoille County,2,18-19,389
+Orange County,2,18-19,332
+Bennington County,2,18-19,564
+Orleans County,2,18-19,274
+Chittenden County,2,18-19,4022
+Essex County,2,20,29
+Franklin County,2,20,227
+Caledonia County,2,20,217
+Addison County,2,20,375
+Rutland County,2,20,502
+Windham County,2,20,237
+Windsor County,2,20,192
+Washington County,2,20,355
+Grand Isle County,2,20,31
+Lamoille County,2,20,199
+Orange County,2,20,136
+Bennington County,2,20,311
+Orleans County,2,20,125
+Chittenden County,2,20,2076
+Essex County,2,21,25
+Franklin County,2,21,238
+Caledonia County,2,21,197
+Addison County,2,21,406
+Rutland County,2,21,434
+Windham County,2,21,207
+Windsor County,2,21,210
+Washington County,2,21,279
+Grand Isle County,2,21,18
+Lamoille County,2,21,134
+Orange County,2,21,126
+Bennington County,2,21,250
+Orleans County,2,21,126
+Chittenden County,2,21,1998
+Essex County,2,22-24,83
+Franklin County,2,22-24,692
+Caledonia County,2,22-24,511
+Addison County,2,22-24,633
+Rutland County,2,22-24,1042
+Windham County,2,22-24,731
+Windsor County,2,22-24,860
+Washington County,2,22-24,891
+Grand Isle County,2,22-24,87
+Lamoille County,2,22-24,427
+Orange County,2,22-24,419
+Bennington County,2,22-24,576
+Orleans County,2,22-24,371
+Chittenden County,2,22-24,4186
+Essex County,2,25-29,131
+Franklin County,2,25-29,1405
+Caledonia County,2,25-29,757
+Addison County,2,25-29,806
+Rutland County,2,25-29,1523
+Windham County,2,25-29,1202
+Windsor County,2,25-29,1565
+Washington County,2,25-29,1604
+Grand Isle County,2,25-29,170
+Lamoille County,2,25-29,661
+Orange County,2,25-29,745
+Bennington County,2,25-29,890
+Orleans County,2,25-29,690
+Chittenden County,2,25-29,5579
+Essex County,2,30-34,135
+Franklin County,2,30-34,1535
+Caledonia County,2,30-34,806
+Addison County,2,30-34,889
+Rutland County,2,30-34,1451
+Windham County,2,30-34,1181
+Windsor County,2,30-34,1437
+Washington County,2,30-34,1730
+Grand Isle County,2,30-34,180
+Lamoille County,2,30-34,796
+Orange County,2,30-34,745
+Bennington County,2,30-34,842
+Orleans County,2,30-34,744
+Chittenden County,2,30-34,4802
+Essex County,2,35-39,170
+Franklin County,2,35-39,1651
+Caledonia County,2,35-39,924
+Addison County,2,35-39,1057
+Rutland County,2,35-39,1694
+Windham County,2,35-39,1202
+Windsor County,2,35-39,1554
+Washington County,2,35-39,1888
+Grand Isle County,2,35-39,217
+Lamoille County,2,35-39,778
+Orange County,2,35-39,863
+Bennington County,2,35-39,940
+Orleans County,2,35-39,763
+Chittenden County,2,35-39,4675
+Essex County,2,40-44,222
+Franklin County,2,40-44,1849
+Caledonia County,2,40-44,927
+Addison County,2,40-44,1311
+Rutland County,2,40-44,2039
+Windham County,2,40-44,1503
+Windsor County,2,40-44,1807
+Washington County,2,40-44,2144
+Grand Isle County,2,40-44,240
+Lamoille County,2,40-44,820
+Orange County,2,40-44,983
+Bennington County,2,40-44,1244
+Orleans County,2,40-44,847
+Chittenden County,2,40-44,5462
+Essex County,2,45-49,253
+Franklin County,2,45-49,2046
+Caledonia County,2,45-49,1247
+Addison County,2,45-49,1451
+Rutland County,2,45-49,2533
+Windham County,2,45-49,1947
+Windsor County,2,45-49,2474
+Washington County,2,45-49,2407
+Grand Isle County,2,45-49,342
+Lamoille County,2,45-49,989
+Orange County,2,45-49,1241
+Bennington County,2,45-49,1527
+Orleans County,2,45-49,1009
+Chittenden County,2,45-49,6130
+Essex County,2,50-54,297
+Franklin County,2,50-54,1978
+Caledonia County,2,50-54,1309
+Addison County,2,50-54,1550
+Rutland County,2,50-54,2738
+Windham County,2,50-54,2023
+Windsor County,2,50-54,2596
+Washington County,2,50-54,2643
+Grand Isle County,2,50-54,321
+Lamoille County,2,50-54,1024
+Orange County,2,50-54,1344
+Bennington County,2,50-54,1585
+Orleans County,2,50-54,1052
+Chittenden County,2,50-54,6260
+Essex County,2,55-59,240
+Franklin County,2,55-59,1745
+Caledonia County,2,55-59,1354
+Addison County,2,55-59,1488
+Rutland County,2,55-59,2579
+Windham County,2,55-59,2022
+Windsor County,2,55-59,2497
+Washington County,2,55-59,2478
+Grand Isle County,2,55-59,351
+Lamoille County,2,55-59,886
+Orange County,2,55-59,1236
+Bennington County,2,55-59,1535
+Orleans County,2,55-59,1124
+Chittenden County,2,55-59,5299
+Essex County,2,60-61,114
+Franklin County,2,60-61,551
+Caledonia County,2,60-61,476
+Addison County,2,60-61,544
+Rutland County,2,60-61,913
+Windham County,2,60-61,728
+Windsor County,2,60-61,880
+Washington County,2,60-61,925
+Grand Isle County,2,60-61,113
+Lamoille County,2,60-61,306
+Orange County,2,60-61,458
+Bennington County,2,60-61,549
+Orleans County,2,60-61,431
+Chittenden County,2,60-61,1799
+Essex County,2,62-64,141
+Franklin County,2,62-64,735
+Caledonia County,2,62-64,603
+Addison County,2,62-64,721
+Rutland County,2,62-64,1303
+Windham County,2,62-64,977
+Windsor County,2,62-64,1292
+Washington County,2,62-64,1158
+Grand Isle County,2,62-64,164
+Lamoille County,2,62-64,398
+Orange County,2,62-64,598
+Bennington County,2,62-64,785
+Orleans County,2,62-64,554
+Chittenden County,2,62-64,2409
+Essex County,2,65-66,87
+Franklin County,2,65-66,447
+Caledonia County,2,65-66,309
+Addison County,2,65-66,327
+Rutland County,2,65-66,750
+Windham County,2,65-66,525
+Windsor County,2,65-66,739
+Washington County,2,65-66,568
+Grand Isle County,2,65-66,76
+Lamoille County,2,65-66,237
+Orange County,2,65-66,332
+Bennington County,2,65-66,477
+Orleans County,2,65-66,345
+Chittenden County,2,65-66,1295
+Essex County,2,67-69,108
+Franklin County,2,67-69,538
+Caledonia County,2,67-69,422
+Addison County,2,67-69,504
+Rutland County,2,67-69,941
+Windham County,2,67-69,706
+Windsor County,2,67-69,910
+Washington County,2,67-69,804
+Grand Isle County,2,67-69,96
+Lamoille County,2,67-69,319
+Orange County,2,67-69,400
+Bennington County,2,67-69,622
+Orleans County,2,67-69,447
+Chittenden County,2,67-69,1673
+Essex County,2,70-74,133
+Franklin County,2,70-74,646
+Caledonia County,2,70-74,539
+Addison County,2,70-74,584
+Rutland County,2,70-74,1222
+Windham County,2,70-74,800
+Windsor County,2,70-74,1191
+Washington County,2,70-74,1019
+Grand Isle County,2,70-74,124
+Lamoille County,2,70-74,391
+Orange County,2,70-74,513
+Bennington County,2,70-74,791
+Orleans County,2,70-74,541
+Chittenden County,2,70-74,2120
+Essex County,2,75-79,130
+Franklin County,2,75-79,598
+Caledonia County,2,75-79,464
+Addison County,2,75-79,454
+Rutland County,2,75-79,1011
+Windham County,2,75-79,667
+Windsor County,2,75-79,935
+Washington County,2,75-79,890
+Grand Isle County,2,75-79,83
+Lamoille County,2,75-79,287
+Orange County,2,75-79,397
+Bennington County,2,75-79,717
+Orleans County,2,75-79,436
+Chittenden County,2,75-79,1783
+Essex County,2,80-84,93
+Franklin County,2,80-84,485
+Caledonia County,2,80-84,435
+Addison County,2,80-84,424
+Rutland County,2,80-84,880
+Windham County,2,80-84,562
+Windsor County,2,80-84,773
+Washington County,2,80-84,682
+Grand Isle County,2,80-84,72
+Lamoille County,2,80-84,237
+Orange County,2,80-84,319
+Bennington County,2,80-84,632
+Orleans County,2,80-84,384
+Chittenden County,2,80-84,1622
+Essex County,2,85+,72
+Franklin County,2,85+,485
+Caledonia County,2,85+,463
+Addison County,2,85+,473
+Rutland County,2,85+,1003
+Windham County,2,85+,649
+Windsor County,2,85+,987
+Washington County,2,85+,930
+Grand Isle County,2,85+,49
+Lamoille County,2,85+,272
+Orange County,2,85+,338
+Bennington County,2,85+,683
+Orleans County,2,85+,470
+Chittenden County,2,85+,1820

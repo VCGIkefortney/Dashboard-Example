@@ -15,18 +15,19 @@
 
     <!-- Custom styles for this template -->
     <link href="css/portfolio-item.css" rel="stylesheet">
-    <script type="text/javascript"  src="http://vega.github.io/vega-editor/vendor/d3.min.js" charset="utf-8"></script>
-    <script type="text/javascript"  src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
+
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script src="https://vega.github.io/vega/vega-core.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/vega@3.2.1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@2.1.3"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@3.1.1"></script>
 
 
-    <script type="text/javascript"  src="http://vega.github.io/vega-editor/vendor/vega.js" charset="utf-8"></script>
-    <script type="text/javascript"  src="http://vega.github.io/vega-editor/vendor/vega-embed.js" charset="utf-8"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vega-embed/3.0.0-rc7/vega-embed.js"></script>
 
-    <script type="text/javascript"  src="https://cdnjs.cloudflare.com/ajax/libs/vega/3.0.8/vega.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vega/2.6.1/vega.min.js"></script>
-    <script type="text/javascript"  src="https://cdnjs.cloudflare.com/ajax/libs/vega-lite/2.0.4/vega-lite.js"></script>
-    <script type="text/javascript"  src="https://cdnjs.cloudflare.com/ajax/libs/vega-embed/3.0.0-rc7/vega-embed.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega@3.2.1/build/vega.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@2.3.1/build/vega-lite.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@3.2.0/build/vega-embed.js"></script>
 
 <!---
 
@@ -76,8 +77,7 @@
 
       <!-- Portfolio Item Row -->
       <div class="row">
-
-        <div class="col-md-7">
+        <div class="col-lg-12">
           <div><h4>Vermont Population from 1791 to 2010</h4><p>
           The census is taken every ten years, the growth of Vermont since the first census in 1791 is pronounced and the changes first in the south, then across the state and finally a rapid rise of Chittenden county is clear.</div>
           <div id="vispoptotal"></div>
@@ -85,7 +85,7 @@
           <script>
           var opt = {actions: false}
           var chartpoptotal = {
-                  "$schema": "https://vega.github.io/schema/vega-lite/v2.0.json",
+                  "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
                   "description": "Vermont Population from 1791 to 2010",
                   "data": {"url": "data/census1791-2010county.csv"},
                   "mark": "bar",
@@ -114,12 +114,12 @@
                     "legend": {"title": "County"}
                   }
                 }
-              }
+              };
               vegaEmbed("#vispoptotal", chartpoptotal,opt);
             </script>
           </div>
 
-          <div class="col-md-5">
+          <div class="col-lg-12">
                 <div><h4>Vermont Population by County</h4><p>
                 When viewed as a line the trends become much more obcious. In 1940 Chittenden County starts to grow in leaps and bounds over the rest of the state.</div>
                 <div id="vispopline"></div>
@@ -164,549 +164,50 @@
               </div>
             </div>
 <!--- end of row --->
-    <div class="row">
-      <div class="col-md-12">
-        <div class="col-md-8">
-          <div><h4>Population by Age and Sex</h4></div>
-
-          <div id="agepop"></div>
-          <script>
-          var ageslider = {
-                "$schema": "https://vega.github.io/schema/vega/v3.0.json",
-                "data": [
-                    {
-                      "name": "population",
-                      "url": "data/totalagesexbracket.csv"
-                    },
-                    {
-                      "name": "males",
-                      "source": "population",
-                      "transform": [
-                        {"type": "filter", "expr": "population.sex == 1"}
-                      ]
-                    },
-                    {
-                      "name": "females",
-                      "source": "population",
-                      "transform": [
-                        {"type": "filter", "expr": "population.sex == 2"}
-                      ]
-                    },
-                    {
-                      "name": "ageGroups",
-                      "source": "population",
-                      "transform": [
-                        { "type": "aggregate", "groupby": ["age"] }
-                      ]
-                      }
-                    ],
-                    "mark": "bar",
-                    "from": {"data":"males"},
-                    "encoding": {
-                      "x": {
-                        "field": "sex",
-                        "type": "ordinal",
-                      },
-                      "y": {
-                        "aggregate": "sum",
-                        "field": "people",
-                        "type": "quantitative"
-                        },
-                    }
-                  }
-        vegaEmbed("#agepop", ageslider).then(function(result) {
-          // access view as result.view
-        }).catch(console.error);
-        </script>
+        <div class="row">
+          <h3 class="my-4">Row 2</h3>
+          <div class="col-lg-12">
+          </div>
         </div>
-        <div class="col-md-4">
-          <div id='countypop'></div>
-          <script>
-          var agebar = {
-            "$schema": "https://vega.github.io/schema/vega/v3.0.json",
-            "width": 300,
-            "height": 240,
-            "padding": 5,
-
-            "data": [
-              {
-                "name": "population",
-                "url": "data/totalagesexbracket.csv"}
-              ],
-
-              "scales": [
-                {
-                  "name": "yscale",
-                  "type": "ordinal",
-                  "domain": {"data": "population", "field": "age"},
-                  "range": "height",
-                  "padding": 0.2
-                },
-                {
-                  "name": "xscale",
-                  "type": "linear",
-                  "domain": {"data": "population", "field":"value"},
-                  "range": "width",
-                  "round": true,
-                  "zero": true,
-                  "nice": true
-                },
-                {
-                  "name": "color",
-                  "type": "ordinal",
-                  "domain": {"data": "population", "field": "sex"},
-                  "range": {"scheme": "category20"}
-                }
-              ],
-
-              "axes": [
-                {"orient": "left", "scale": "yscale", "tickSize": 0, "labelPadding": 4, "zindex": 1},
-                {"orient": "bottom", "scale": "xscale"}
-              ],
-
-              "marks": [
-                {
-                  "type": "group",
-
-                  "from": {
-                    "facet": {
-                      "data": "population",
-                      "name": "facet",
-                      "groupby": "age"
-                    }
-                  },
-
-                  "encode": {
-                    "enter": {
-                      "y": {"scale": "yscale", "field": "age"}
-                    }
-                  },
-
-                  "signals": [
-                    {"name": "height", "update": "bandwidth('yscale')"}
-                  ],
-
-                  "scales": [
-                    {
-                      "name": "pos",
-                      "type": "band",
-                      "range": "height",
-                      "domain": {"data": "facet", "field": "sex"}
-                    }
-                  ],
-
-                  "marks": [
-                    {
-                      "name": "bars",
-                      "from": {"data": "facet"},
-                      "type": "rect",
-                      "encode": {
-                        "enter": {
-                          "y": {"scale": "pos", "field": "sex"},
-                          "height": {"scale": "pos", "band": 1},
-                          "x": {"scale": "xscale", "field":"value"},
-                          "x2": {"scale": "xscale", "value": 0},
-                          "fill": {"scale": "color", "field": "sex"}
-                        }
-                      }
-                    },
-                    {
-                      "type": "text",
-                      "from": {"data": "bars"},
-                      "encode": {
-                        "enter": {
-                          "x": {"field": "x2", "offset": -5},
-                          "y": {"field": "y", "offset": {"field": "height", "mult": 0.5}},
-                          "fill": {"value": "white"},
-                          "align": {"value": "right"},
-                          "baseline": {"value": "middle"},
-                          "text": {"field": "datum.value"}
-                        }
-                      }
-                    }
-                  ]
-                }
-              ]
-            };
-            vegaEmbed("#countypop", agebar).then(function(result) {
-            }).catch(console.error);
-          </script>
-
-
+<!--- end of row --->
+<!-- /.row -->
+        <div class="row">
+          <h3 class="my-4">Row 3</h3>
+          <div class="col-lg-12">
+          </div>
         </div>
-      </div>
+<!--- end of row --->
 
-
-
-
-          <div><h4>2 This is a Cedar Chart with Esri API Data</h4></div>
-          <div id="vis2"></div>
-              <script>
-              //create a cedar chart using the known 'bar' type
-              // this is the same as passing {"specification": "path/to/cedar/charts/bar.json"}
-              var chart = new Cedar({"type": "bar"});
-
-              //create the dataset w/ mappings
-              var dataset = {
-                "url":"http://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Education_WebMercator/MapServer/5",
-                "query": {
-                  "groupByFieldsForStatistics": "ZIP_CODE",
-                  "outStatistics": [{
-                    "statisticType": "count",
-                    "onStatisticField": "TOTAL_STUD",
-                    "outStatisticFieldName": "TOTAL_STUD_SUM"
-                  }]
-                },
-                "mappings":{
-                  "sort": "TOTAL_STUD_SUM DESC",
-                  "x": {"field":"ZIP_CODE","label":"ZIP Code"},
-                  "y": {"field":"TOTAL_STUD_SUM","label":"Total Students"}
-                }
-              };
-              //assign to the chart
-              chart.dataset = dataset;
-              //show the chart
-              chart.show({elementId: "#vis2"});
-              </script>
-
-
-            </div>
-          <div class="col-md-5">
-
-
-            <div><h4>3 This is a Cedar Chart with VCGI API Data</h4></div>
-            <div id="vis3"></div>
-
-
-                <script>
-                //create a cedar chart using the known 'bar' type
-                // this is the same as passing {"specification": "path/to/cedar/charts/bar.json"}
-                var chart = new Cedar({"type": "bar"});
-
-
-                //create the dataset w/ mappings
-                var dataset = {
-                  "url":"http://maps.vcgi.vermont.gov/arcgis/rest/services/EGC_services/OPENDATA_VCGI_HEALTH_SP_NOCACHE_v1/FeatureServer/2",
-                  "mappings":{
-                    "x": {"field":"CNTYNAME","label":"County"},
-                    "y": {"field":"TLBW1989","label":"TLBW1989"}
-                  }
-                };
-
-                //assign to the chart
-                chart.dataset = dataset;
-
-                //show the chart
-                chart.show({
-                  elementId: "#vis3"
-                });
-
-                </script>
-
-
-
-
-<h4>4 This is a Vega Chart with VCGI Embedded JSON</h4>
-            <div id="vis4"></div>
-
-            <script>
-            var opt = {actions: false}
-
-            var vis4 = {
-              "$schema": "https://vega.github.io/schema/vega/v3.0.json",
-              "width": 400,
-              "height": 200,
-              "padding": 5,
-
-              "data": [
-                {
-                  "name": "table",
-                  "values": [
-                    {
-                    "County": "Addison",
-                    "Population": 449,
-                    "Town": "Monkton",
-                    "Year": 1791
-                  },
-                  {
-                    "County": "Bennington",
-                    "Population": 1034,
-                    "Town": "Rupert",
-                    "Year": 1791
-                  },
-                  {
-                    "County": "Chittenden",
-                    "Population": 454,
-                    "Town": "Hinesburg",
-                    "Year": 1791
-                  },
-                  {
-                    "County": "Orange",
-                    "Population": 873,
-                    "Town": "Newbury",
-                    "Year": 1791
-                  }
-                  ]
-                }
-              ],
-
-              "signals": [
-                {
-                  "name": "tooltip",
-                  "value": {},
-                  "on": [
-                    {"events": "rect:mouseover", "update": "datum"},
-                    {"events": "rect:mouseout",  "update": "{}"}
-                  ]
-                }
-              ],
-
-              "scales": [
-                {
-                  "name": "xscale",
-                  "type": "band",
-                  "domain": {"data": "table", "field": "County"},
-                  "range": "width",
-                  "padding": 0.05,
-                  "round": true
-                },
-                {
-                  "name": "yscale",
-                  "domain": {"data": "table", "field": "Population"},
-                  "nice": true,
-                  "range": "height"
-                }
-              ],
-
-              "axes": [
-                { "orient": "bottom", "scale": "xscale" },
-                { "orient": "left", "scale": "yscale" }
-              ],
-
-              "marks": [
-                {
-                  "type": "rect",
-                  "from": {"data":"table"},
-                  "encode": {
-                    "enter": {
-                      "x": {"scale": "xscale", "field": "County"},
-                      "width": {"scale": "xscale", "band": 1},
-                      "y": {"scale": "yscale", "field": "Population"},
-                      "y2": {"scale": "yscale", "value": 0}
-                    },
-                    "update": {
-                      "fill": {"value": "steelblue"}
-                    },
-                    "hover": {
-                      "fill": {"value": "red"}
-                    }
-                  }
-                },
-                {
-                  "type": "text",
-                  "encode": {
-                    "enter": {
-                      "align": {"value": "center"},
-                      "baseline": {"value": "bottom"},
-                      "fill": {"value": "#333"}
-                    },
-                    "update": {
-                      "x": {"scale": "xscale", "signal": "tooltip.category", "band": 0.5},
-                      "y": {"scale": "yscale", "signal": "tooltip.amount", "offset": -2},
-                      "text": {"signal": "tooltip.amount"},
-                      "fillOpacity": [
-                        {"test": "datum === tooltip", "value": 0},
-                        {"value": 1}
-                      ]
-                    }
-                  }
-                }
-              ]
-            }
-            vegaEmbed("#vis4", vis4, opt);
-          </script>
-
+<!-- /.row -->
+        <div class="row">
+          <h3 class="my-4">Row 4</h3>
+          <div class="col-lg-12">
+          </div>
         </div>
-    </div>
-      <!-- /.row -->
-
-      <!-- Related Projects Row -->
-      <h3 class="my-4">Related Projects</h3>
-
-      <div class="row">
-
-        <div class="col-md-3 col-sm-6 mb-4">
-
-
+<!--- end of row --->
+<!-- /.row -->
+        <div class="row">
+          <h3 class="my-4">Row 5</h3>
+          <div class="col-lg-12">
+          </div>
         </div>
-
-        <div class="col-sm-6">
-          <div id="vis232">thjios</div>
-          <script type="text/javascript">
-          var special = "data.JSON";
-          vegaEmbed('#vis232', special).then(function(result) {
-            // access view as result.view
-          }).catch(console.error);
-        </script>
+<!--- end of row --->
+<!-- /.row -->
+        <div class="row">
+          <h3 class="my-4">Row 6</h3>
+          <div class="col-lg-12">
+          </div>
         </div>
-
-        <div class="col-sm-6">
-          <a href="#">
-            <img class="img-fluid" src="http://placehold.it/500x300" alt="">
-          </a>
-        </div>
+<!--- end of row --->
 
 
-
-      </div>
-      <!-- /.row -->
-
-
-
-<!--- Next Row--------------->
-
-  <div class="row">
-
-    <div class="col-md-3 col-sm-6 mb-4">
-
-
-            <script type="text/javascript">
-            var vis3 =     {
-              "$schema": "https://vega.github.io/schema/vega/v3.0.json",
-              "width": 400,
-              "height": 200,
-              "padding": 5,
-
-              "data": [
-                {
-                  "name": "table",
-                  "values": [
-                    {"category": "A", "amount": 68},
-                    {"category": "B", "amount": 55},
-                    {"category": "C", "amount": 43},
-                    {"category": "D", "amount": 91},
-                    {"category": "E", "amount": 81},
-                    {"category": "F", "amount": 53},
-                    {"category": "G", "amount": 19},
-                    {"category": "H", "amount": 87}
-                  ]
-                }
-              ],
-
-              "signals": [
-                {
-                  "name": "tooltip",
-                  "value": {},
-                  "on": [
-                    {"events": "rect:mouseover", "update": "datum"},
-                    {"events": "rect:mouseout",  "update": "{}"}
-                  ]
-                }
-              ],
-
-              "scales": [
-                {
-                  "name": "xscale",
-                  "type": "band",
-                  "domain": {"data": "table", "field": "category"},
-                  "range": "width",
-                  "padding": 0.05,
-                  "round": true
-                },
-                {
-                  "name": "yscale",
-                  "domain": {"data": "table", "field": "amount"},
-                  "nice": true,
-                  "range": "height"
-                }
-              ],
-
-              "axes": [
-                { "orient": "bottom", "scale": "xscale" },
-                { "orient": "left", "scale": "yscale" }
-              ],
-
-              "marks": [
-                {
-                  "type": "rect",
-                  "from": {"data":"table"},
-                  "encode": {
-                    "enter": {
-                      "x": {"scale": "xscale", "field": "category"},
-                      "width": {"scale": "xscale", "band": 1},
-                      "y": {"scale": "yscale", "field": "amount"},
-                      "y2": {"scale": "yscale", "value": 0}
-                    },
-                    "update": {
-                      "fill": {"value": "steelblue"}
-                    },
-                    "hover": {
-                      "fill": {"value": "red"}
-                    }
-                  }
-                },
-                {
-                  "type": "text",
-                  "encode": {
-                    "enter": {
-                      "align": {"value": "center"},
-                      "baseline": {"value": "bottom"},
-                      "fill": {"value": "#333"}
-                    },
-                    "update": {
-                      "x": {"scale": "xscale", "signal": "tooltip.category", "band": 0.5},
-                      "y": {"scale": "yscale", "signal": "tooltip.amount", "offset": -2},
-                      "text": {"signal": "tooltip.amount"},
-                      "fillOpacity": [
-                        {"test": "datum === tooltip", "value": 0},
-                        {"value": 1}
-                      ]
-                    }
-                  }
-                }
-              ]
-            }
-            vegaEmbed("#vis41", vis3).catch(console.warn);
-          </script>
-
-                          <div id="vis232">chart 2</div>
-                          <script type="text/javascript">
-                          var yourVl2Spec = {
-                            "$schema": "https://vega.github.io/schema/vega/v3.0.json",
-                            "width": 400,
-                            "height": 200,
-                            "padding": 5,
-                            "data": [{
-                              "name": "population",
-                              "url": "/historicalpopulation2.csv",
-                              "format": {"type": "csv", "parse": "auto"}
-                            }
-                          ],
-                          "mark": "bar",
-                          "encoding": {
-                            "x": {
-                              "field": "Town",
-                              "type": "ordinal"
-                            },
-                            "y": {
-                              "field": "Population",
-                              "type": "quantitative"
-                            }
-                          }
-                        };
-                        vegaEmbed("#vis232", yourVl2Spec);
-                      </script>
-
-            </div>
-            </div>
-
-    </div>
-    <!-- /.container -->
+  </div>
+<!-- /.container -->
 
     <!-- Footer -->
     <footer class="py-5 bg-dark">
       <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; </p>
+        <p class="m-0 text-center text-white">Copyright 2018 &copy; </p>
       </div>
       <!-- /.container -->
     </footer>
