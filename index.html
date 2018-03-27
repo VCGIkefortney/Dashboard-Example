@@ -77,7 +77,7 @@
 
       <!-- Portfolio Item Row -->
       <div class="row">
-        <div class="col-lg-12">
+        <div class="col-lg-12 text-center">
           <div><h4>Vermont Population from 1791 to 2010</h4><p>
           The census is taken every ten years, the growth of Vermont since the first census in 1791 is pronounced and the changes first in the south, then across the state and finally a rapid rise of Chittenden county is clear.</div>
           <div id="vispoptotal"></div>
@@ -88,7 +88,9 @@
                   "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
                   "description": "Vermont Population from 1791 to 2010",
                   "data": {"url": "data/census1791-2010county.csv"},
-                  "mark": "bar",
+                  "mark": "area",
+                  "width": 800,
+                  "height": 400,
                   "encoding": {
                     "x": {
                       "field": "Year",
@@ -119,54 +121,87 @@
             </script>
           </div>
 
-          <div class="col-lg-12">
+          <div class="col-lg-12 text-center">
                 <div><h4>Vermont Population by County</h4><p>
                 When viewed as a line the trends become much more obcious. In 1940 Chittenden County starts to grow in leaps and bounds over the rest of the state.</div>
                 <div id="vispopline"></div>
                 <script>
                 var opt = {actions: false}
                 var popline = {
-                      "$schema": "https://vega.github.io/schema/vega-lite/v2.0.json",
-                      "description": "Vermont Population from 1791 to 2010",
-                      "data": {"url": "data/census1791-2010county.csv"},
-                          "mark": "line",
+                        "$schema": "https://vega.github.io/schema/vega-lite/v2.0.json",
+                        "description": "Vermont Population from 1791 to 2010",
+                        "data": {"url": "data/census1791-2010county.csv"},
+                        "width": 800,
+                        "height": 400,
+                        "mark": "bar",
+                        "transform": [
+                            {"filter": {"selection":  "Census"}}
+                            ],
+                        "selection": {
+                              "Census": {
+                                "type": "single",
+                                "fields": ["Year"],
+                                "bind": {
+                                  "year": {"input": "range","min": 1790,"max": 2010,"step": 10}
+                                }
+                              }
+                          },
+
                           "encoding": {
                             "x": {
-                              "field": "Year",
-                              "type": "ordinal",
-                              "axis": {"title": "Census Year"},
-                              "scale": {"rangeStep": 10}
+                              "field": "County",
+                              "type": "nominal",
+                              "axis": {"title": "County"},
                             },
                             "y": {
                               "aggregate": "sum",
                               "field": "Population",
-                              "type": "quantitative"
+                              "type": "quantitative",
+                              "axis": {"title": "Population"},
                               },
-                            "color": {
-                              "field": "County",
-                              "type": "nominal",
-                              "scale": {
-                                "domain": ['Addison', 'Bennington', 'Caledonia', 'Chittenden', 'Essex',
-                                'Franklin', 'Grand Isle', 'Lamoille', 'Orange', 'Orleans',
-                                'Rutland', 'Washington', 'Windham', 'Windsor'],
-                                "range": ['#6DCC73', '#1D7775', '#4FCFD5', '#FF7050', "#C0A943",
-                                '#2DBCAF','#FFC050', '#999999', '#9CFF20','#EC8BB4',
-                                '#E84D46',"#B2A0D7","#FF5A75","#64BB78",'#FCE651']
-                              },
-                            "legend": {"title": "County"}
                           }
-                        }
-                      }
+                        };
                     vegaEmbed("#vispopline", popline,opt);
-                //create a cedar chart using the known 'bar' type
-                // this is the same as passing {"specification": "path/to/cedar/charts/bar.json"}
                 </script>
               </div>
             </div>
 <!--- end of row --->
         <div class="row">
-          <h3 class="my-4">Row 2</h3>
-          <div class="col-lg-12">
+          <h3 class="my-4">Age Brackets by Gender for Vermont in 2010 Census</h3>
+          <div class="col-lg-12 text-center">
+            <div id="visagesex"></div>
+            <script>
+            var opt = {actions: false}
+            var popline = {
+                  "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
+                  "width": 800,
+                  "height": 400,
+                  "description": "A bar chart showing the US population distribution of age groups and gender in 2000.",
+                  "data": { "url": "data/2010censuscountyagesexbrackets.csv"},
+                  "transform": [
+                    {"calculate": "datum.sex == 2 ? 'Female' : 'Male'", "as": "gender"}
+                  ],
+                  "mark": "bar",
+                  "encoding": {
+                    "x": {
+                      "field": "age", "type": "ordinal",
+                      "scale": {"rangeStep": 17}
+                    },
+                    "y": {
+                      "aggregate": "sum", "field": "count", "type": "quantitative",
+                      "axis": {"title": "population"},
+                      "stack": null
+                    },
+                    "color": {
+                      "field": "gender", "type": "nominal",
+                      "scale": {"range": ["#e377c2","#1f77b4"]}
+                    },
+                    "opacity": {"value": 0.7}
+                  }
+                  }
+
+                  vegaEmbed("#visagesex", popline,opt);
+              </script>
           </div>
         </div>
 <!--- end of row --->
@@ -174,10 +209,26 @@
         <div class="row">
           <h3 class="my-4">Row 3</h3>
           <div class="col-lg-12">
+  <div id="vispoptotal1"></div>
+
+
+
           </div>
         </div>
 <!--- end of row --->
 
+                          "color": {
+                            "field": "County",
+                            "type": "nominal",
+                            "scale": {
+                              "domain": ['Addison', 'Bennington', 'Caledonia', 'Chittenden', 'Essex',
+                              'Franklin', 'Grand Isle', 'Lamoille', 'Orange', 'Orleans',
+                              'Rutland', 'Washington', 'Windham', 'Windsor'],
+                              "range": ['#6DCC73', '#1D7775', '#4FCFD5', '#FF7050', "#C0A943",
+                              '#2DBCAF','#FFC050', '#999999', '#9CFF20','#EC8BB4',
+                              '#E84D46',"#B2A0D7","#FF5A75","#64BB78",'#FCE651']
+                            },
+                          "legend": {"title": "County"}
 <!-- /.row -->
         <div class="row">
           <h3 class="my-4">Row 4</h3>
