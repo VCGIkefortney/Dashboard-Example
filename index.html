@@ -78,7 +78,7 @@
       <!-- Portfolio Item Row -->
       <div class="row">
         <div class="col-lg-12 text-center">
-          <div><h4>Vermont Population from 1791 to 2010</h4><p>
+          <div class="text-left"><h4 class="my-4">Vermont Population from 1791 to 2010</h4><p>
           The census is taken every ten years, the growth of Vermont since the first census in 1791 is pronounced and the changes first in the south, then across the state and finally a rapid rise of Chittenden county is clear.</div>
           <div id="vispoptotal"></div>
           <!-- This is an example of a Vega Lite chart -->
@@ -122,8 +122,8 @@
           </div>
 
           <div class="col-lg-12 text-center">
-                <div><h4>Vermont Population by County</h4><p>
-                When viewed as a line the trends become much more obcious. In 1940 Chittenden County starts to grow in leaps and bounds over the rest of the state.</div>
+                <div class="text-left"><h4 class="my-4">Vermont Population by County</h4><p>
+                When viewed as a line the trends become much more obcious. In 1940 Chittenden County starts to grow in leaps and bounds over the rest of the state. Type in the year below to see the population, the census is every 10 years so 1790, 1800, 1810, etc.</div>
                 <div id="vispopline"></div>
                 <script>
                 var opt = {actions: false}
@@ -167,8 +167,9 @@
             </div>
 <!--- end of row --->
         <div class="row">
-          <h3 class="my-4">Age Brackets by Gender for Vermont in 2010 Census</h3>
           <div class="col-lg-12 text-center">
+            <div class="text-left"><h4 class="my-4">Age Brackets by Gender for Vermont in 2010 Census</h4><p>
+            Like most states, understanding how Vermont is aging had a direct impact on policy and public service operation.  Here we can see seperation in gender and count of population in the ages above 65.</div>
             <div id="visagesex"></div>
             <script>
             var opt = {actions: false}
@@ -181,7 +182,7 @@
                   "transform": [
                     {"calculate": "datum.sex == 2 ? 'Female' : 'Male'", "as": "gender"}
                   ],
-                  "mark": "bar",
+                  "mark": "area",
                   "encoding": {
                     "x": {
                       "field": "age", "type": "ordinal",
@@ -207,16 +208,64 @@
 <!--- end of row --->
 <!-- /.row -->
         <div class="row">
-          <h3 class="my-4">Row 3</h3>
-          <div class="col-lg-12">
-  <div id="vispoptotal1"></div>
-
-
-
+          <div class="col-lg-12 text-center">
+            <div class="text-left"><h4 class="my-4">Ethnicity by County for Vermont in 2010</h4><p></div>
+            <div id="visethnicity"></div>
+              <script>
+              var opt = {actions: false}
+              var popline =
+              {
+                "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
+                "data": {"url": "data/2010censuscountyethnicity.csv"},
+                "mark": "bar",
+                "width": 800,
+                "height": 400,
+                "encoding": {
+                  "x": {
+                    "field": "county",
+                    "type": "nominal",
+                    "axis": {"title": "County"}
+                  },
+                  "y": {
+                    "field": "count",
+                    "aggregate": "sum",
+                    "type": "quantitative",
+                    "axis": {"title": "Count"}
+                  },
+                  "color": {
+                    "field": "ethinicity",
+                    "type": "nominal",
+                    "scale": {
+                      "domain": ["WHITE ALONE","BLACK OR AFRICAN AMERICAN ALONE","AMERICAN INDIAN AND ALASKA NATIVE ALONE","ASIAN ALONE","NATIVE HAWAIIAN AND OTHER PACIFIC ISLANDER ALONE","HISPANIC OR LATINO","OTHER RACE","TWO OR MORE RACES",],
+                      "range": ["#1f77b4","#e7ba52","	#8ee5ee","#66cd00","#ff7f24","#b23aee","#c7c7c7","#ee1289"]
+                    },
+                    "legend": {"title": "Weather type"}
+                  }
+                }
+              }
+              vegaEmbed("#visethnicity", popline,opt);
+              </script>
           </div>
         </div>
 <!--- end of row --->
+<!-- /.row -->
+        <div class="row">
+          <h3 class="my-4">Row 3</h3>
+          <div class="col-lg-12">
+            <div id="vis"></div>
+              <script>
+              var opt = {actions: false}
+              var popline = {
 
+              }
+
+
+                  vegaEmbed("#vis", popline,opt);
+              </script>
+
+          </div>
+        </div>
+<!--
                           "color": {
                             "field": "County",
                             "type": "nominal",
